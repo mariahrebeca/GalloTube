@@ -9,12 +9,6 @@ public class Video
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
-       [NotMapped]
-    [Display(Name = "Classificação Etária")]
-    public string Classification { get {
-        return AgeRating == 0 ? "Livre" : AgeRating + " anos";
-    } }
-
     [Display(Name = "Título")]
     [Required(ErrorMessage = "O Título é obrigatório")]
     [StringLength(100, ErrorMessage = "O Título deve possuir no máximo 100 caracteres")]

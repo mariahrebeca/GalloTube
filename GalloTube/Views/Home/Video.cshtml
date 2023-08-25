@@ -16,7 +16,6 @@
             <div class="col-md-9">
         
                 <p>Duração: @Model.Duration</p>
-                <p>Classificação: @Model.Classification</p>
                 @foreach(VideoTag VideoTag in Model.Tags)
                 {
                     <span class="badge bg-secondary me-2">@VideoTag.Tag.Name</span>
