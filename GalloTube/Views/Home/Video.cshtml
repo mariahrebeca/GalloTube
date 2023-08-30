@@ -11,10 +11,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="@Model.VideoFile" alt="@Model.Name" class="img-fluid">
+                <img src="@Model.Thumbnail" alt="@Model.Name" class="img-fluid">
             </div>
             <div class="col-md-9">
-        
+                <p>Descrição: @Model.Description</p>
                 <p>Duração: @Model.Duration</p>
                 @foreach(VideoTag VideoTag in Model.Tags)
                 {
